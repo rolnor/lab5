@@ -1,7 +1,6 @@
 #include <shapes.h>
 
-
-void Shape::render()
+void Shape::render(SDL_Renderer* renderer)
 {
 	cout << "Basic shape. Print not implemented" << endl;
 }
