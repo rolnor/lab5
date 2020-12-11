@@ -9,11 +9,11 @@ int main(int argc, char* args[])
 {
 	Point2D test;
 	vector<Shape *> shapes;
-	test.setX(3);
-	test.setY(5);
+	test.setX(100);
+	test.setY(100);
 
 	int rgb[4] = { 100,233,245,44 };
-	Circle circle(test, rgb, 1);
+	Circle circle(test, rgb, 30);
 	test.setX(107);
 	test.setY(108);
 	changeColor(rgb, 22, 33, 44, 55);
@@ -33,13 +33,13 @@ int main(int argc, char* args[])
 
 
 	
-	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+	SDL_SetRenderDrawColor(renderer, 255, 255, 0, 255);
 
 	SDL_RenderClear(renderer);
 	testRendering(shapes, renderer);
 	SDL_RenderPresent(renderer);
 	
-	SDL_Delay(3000);
+	SDL_Delay(8000);
 	return 0;
 }
 

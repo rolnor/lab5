@@ -1,4 +1,5 @@
 #include <shapes.h>
+#include <math.h>
 
 void Rectangle::render(SDL_Renderer* renderer)
 {
@@ -27,4 +28,12 @@ void Circle::render(SDL_Renderer* renderer)
 {
 	cout << "Circle" << endl << "Radius: " << this->radius << endl;
 	cout << "Position:  X = " << this->getX() << " Y = " << this->getY() << endl << endl;
+	SDL_SetRenderDrawColor(renderer, this->getrgb(0), this->getrgb(1), this->getrgb(2), this->getrgb(3));
+	for (int deg = 0; deg < 360; deg++)
+	{
+		float radtodeg = deg * 3.1415 / 180;
+		float nx = cos(radtodeg) * this->radius;
+		float ny = sin(radtodeg) * this->radius;
+		SDL_RenderDrawLine(renderer, this->getX(), this->getY(), this->getX()+nx, this->getX()+ny);
+	}
 }

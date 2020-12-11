@@ -148,7 +148,7 @@
     <ClCompile Include="point2d.cpp" />
     <ClCompile Include="shapes.cpp" />
     <ClCompile Include="methods.cpp" />
-    <ClCompile Include="shapetest.cpp" />
+    <ClCompile Include="task1_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="point2d.h" />

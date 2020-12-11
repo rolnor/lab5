@@ -15,7 +15,6 @@ Shape::Shape(Point2D& inPoint, int rgbAlpha[4])
 	}
 
 	point = new Point2D(inPoint.getX(),inPoint.getY());
-	//	&inPoint;
 }
 
 Shape::~Shape()
@@ -37,15 +36,3 @@ float Shape::getY()
 {
 	return this->point->getY();
 }
-
-/*
-int main()
-{
-	Point2D test;
-	test.setX(3);
-	test.setY(5);
-	int rgb[3] = { 500,233,245 };
-	Shape generic(test, rgb);
-	generic.render();
-		cout << generic.getX();
-}*/

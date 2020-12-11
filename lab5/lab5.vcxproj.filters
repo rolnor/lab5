@@ -24,7 +24,7 @@
     <ClCompile Include="methods.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shapetest.cpp">
+    <ClCompile Include="task1_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
