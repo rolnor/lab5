@@ -29,10 +29,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="point2d.h">
+    <ClInclude Include="shapes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shapes.h">
+    <ClInclude Include="point2d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

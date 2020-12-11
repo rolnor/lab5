@@ -1,10 +1,11 @@
 #include <shapes.h>
 #include <vector>
+#include <SDL.h>
 
 void testRendering(vector<Shape *> shapes);
 void changeColor(int colors[4], int val1, int val2, int val3, int val4);
 
-int main()
+int main(int argc, char* args[])
 {
 	Point2D test;
 	vector<Shape *> shapes;
@@ -21,11 +22,24 @@ int main()
 	test.setY(38);
 	changeColor(rgb, 122, 133, 144, 155);
 	Rectangle rectangle(test, rgb, 35, 46);
-	// new Circle(test, rgb, 1)
 	shapes.push_back(&circle);
 	shapes.push_back(&triangle);
 	shapes.push_back(&rectangle);
 	testRendering(shapes);
+
+	SDL_Init(SDL_INIT_EVERYTHING);
+	SDL_Window *window = SDL_CreateWindow("title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
+	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
+
+	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+
+	SDL_RenderClear(renderer);
+
+	SDL_RenderPresent(renderer);
+
+	SDL_Delay(3000);
+
+	return 0;
 }
 
 
