@@ -5,6 +5,7 @@
 void testRendering(vector<Shape *> shapes, SDL_Renderer* renderer);
 void changeColor(int colors[4], int val1, int val2, int val3, int val4);
 
+/*
 int main(int argc, char* args[])
 {
 	Point2D test;
@@ -41,12 +42,12 @@ int main(int argc, char* args[])
 	
 	SDL_Delay(8000);
 	return 0;
-}
+}*/
 
 
 void testRendering(vector<Shape *> shapes, SDL_Renderer* renderer)
 {
-	for (auto iterator = shapes.begin(); iterator < shapes.end(); iterator++)
+	for (auto iterator = shapes.begin(); iterator < shapes.end(); ++iterator)
 	{
 		iterator[0]->render(renderer);
 	}
