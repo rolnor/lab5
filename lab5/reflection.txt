@@ -1,0 +1,13 @@
+-What did you learn? What did you know already?
+Got a better understanding of inheritence usage. 
+Interesting to work a bit with SDL.
+
+-What was difficult in the lab? How did you overcome it?
+Memory handeling with different scopes. Still much trial and error when 
+solving bugs from adressing memory. The SDL part was a bit hard to understand because of the scope of the library.
+
+-How can the lab be improved?
+Nothing much to add. Good structured lab with interesting parts of SDL.
+
+-Additionally, write an estimate how many hours you spent on this lab.
+About 3 work days.

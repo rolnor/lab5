@@ -42,4 +42,7 @@
   <ItemGroup>
     <None Include="citygame.class.violet.html" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="reflection.txt" />
+  </ItemGroup>
 </Project>
